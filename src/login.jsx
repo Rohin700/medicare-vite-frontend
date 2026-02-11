@@ -32,9 +32,9 @@ let LoginForm = () => {
 
         let url = server_url + "/login/dologin";
         let resp = await axios.post(url, objFormData);
-        console.log(resp.data.obj.utype);
         
         if(resp.data.status){
+          console.log(resp.data.obj.utype);
           alert(resp.data.msg)
           // alert(resp.data.token);
 
