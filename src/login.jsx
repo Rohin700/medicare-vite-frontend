@@ -50,7 +50,7 @@ let LoginForm = () => {
 
         }catch(err){
         console.log(err.message);
-        alert(err.message);
+        alert("Error Happened : "+err.message);
       }
   }
 
